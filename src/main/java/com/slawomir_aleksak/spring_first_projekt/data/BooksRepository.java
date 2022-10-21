@@ -6,6 +6,6 @@ import com.slawomir_aleksak.spring_first_projekt.models.Book;
 // public class BooksRepository {
     
 // }
-public interface BooksRepository extends JpaRepository <Book, Long> {
+public interface BooksRepository extends JpaRepository<Book, Long> {
     
 }
