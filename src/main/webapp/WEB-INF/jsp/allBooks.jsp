@@ -1,4 +1,5 @@
-<%@ taglib uri="https://java.sun.com/jsp/jstl/core" prefix="c" %>
+<!-- <%@ taglib uri="https://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %> -->
 
 <h1>
     All Books

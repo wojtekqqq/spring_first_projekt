@@ -1,5 +1,6 @@
-<%@ taglib prefix="spring" uri="http://www.springframework.org/tags"%>
+<!-- <%@ taglib prefix="spring" uri="http://www.springframework.org/tags"%>
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %> -->
 <html>
     <body>
         <h1>
@@ -9,11 +10,12 @@
             <form:errors path="" element="div"/>
             <div>
                 <form:label path="title">Title</form:label>
-                <form:imput path="title" />
-                <form:errors path="title" />                
+                <form:input path="title"/>
+                <form:errors path="title"/>                
             </div>
+            <br>
             <div>
-                <input type="submin" />
+                <input type="submit" />
             </div>
         </form:form>        
     </body>
