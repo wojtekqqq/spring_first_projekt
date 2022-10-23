@@ -23,7 +23,11 @@ public class Book {
     }
     
     @Override
+//    public String toString() {
+//        return "Book [id=" + id + ", title=" + title + "]";
+//    }
     public String toString() {
-        return "Book [id=" + id + ", title=" + title + "]";
+        return "<li class="list-group-item">${book} <span class="badge">12</span></li>;
     }
+//    <li class="list-group-item">${book} <span class="badge">12</span></li>
 }

@@ -1,5 +1,9 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
-<h1>
+<head>
+    <link href="webjars/bootstrap/3.3.6/css/bootstrap.min.css"
+          rel="stylesheet">
+</head>
+<h1 class="text-danger">
     Sławomir Aleksak
 </h1>
 <br>
