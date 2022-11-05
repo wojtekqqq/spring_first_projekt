@@ -11,9 +11,17 @@
 <h1 class="text-danger">
     All Books
 </h1>
-<ul class="list-group">
+<table>
+    <tr>
+        <th>Title</th>
+        <th>Edit</th>
+        <th>Delete</th>
+    </tr>
     <c:forEach items="${books}" var="book">
-<%--       <li class="list-group-item">${book}</li>--%>
-        <li class="list-group-item">${book} <span class="badge">12</span></li>
+        <tr>
+            <td>${book.title}</td>
+            <td><a href="/books/edit/${book.id}">Edit</a> </td>
+            <td><a href="/books/delete/${book.id}">Delete</a> </td>
+        </tr>
     </c:forEach>
-</ul>
+</table>

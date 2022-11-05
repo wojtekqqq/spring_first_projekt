@@ -9,13 +9,15 @@
         <form:form modelAttribute="form" action="/books/save">
             <form:errors path="" element="div"/>
             <div>
+                <form:hidden path="id"/>
+
                 <form:label path="title">Title</form:label>
                 <form:input path="title"/>
                 <form:errors path="title"/>                
             </div>
             <br>
             <div>
-                <input type="submit" />
+                <input type="submit" value="Save" />
             </div>
         </form:form>        
     </body>
