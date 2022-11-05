@@ -8,9 +8,14 @@
     <script src="webjars/jquery/1.9.1/jquery.min.js"></script>
     <script src="webjars/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 </head>
+<body>
 <h1 class="text-danger">
     All Books
 </h1>
+<h3>
+<a href="/books/addNew" class="text-info"> Add new book</a>
+</h3>
+
 <table>
     <tr>
         <th>Title</th>
@@ -25,3 +30,4 @@
         </tr>
     </c:forEach>
 </table>
+</body>

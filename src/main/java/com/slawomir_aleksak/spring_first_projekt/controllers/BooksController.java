@@ -21,19 +21,27 @@ public class BooksController {
     @Autowired
     private BooksRepository booksData;
 
-    @RequestMapping(value = "/addNew", method = RequestMethod.POST)
-    public String newBook(Book book) {
+//    @RequestMapping(value = "/addNew", method = RequestMethod.POST)
+//    public String newBook(Book book) {
+//
+//        booksData.save(book);
+//        return ("redirect:/books/list");
+//
+//    }
 
-        booksData.save(book);
-        return ("redirect:/books/list");
-
-    }
+//    @RequestMapping(value = "/addNew", method = RequestMethod.GET)
+//    public ModelAndView addNewBook() {
+//
+//        Book book = new Book();
+//        return new ModelAndView("newBook", "form", book);
+//
+//    }
 
     @RequestMapping(value = "/addNew", method = RequestMethod.GET)
     public ModelAndView addNewBook() {
 
         Book book = new Book();
-        return new ModelAndView("newBook", "form", book);
+        return new ModelAndView("editBook", "form", book);
 
     }
     @RequestMapping(value = "/list", method = RequestMethod.GET)
