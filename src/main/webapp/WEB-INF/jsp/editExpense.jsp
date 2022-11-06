@@ -3,7 +3,8 @@
 <!--
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 -->
-<html>
+<!DOCTYPE html>
+<html lang="pl">
 <head>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
@@ -22,12 +23,11 @@
     </c:otherwise>
 </c:choose>
 
-
 <%--@elvariable id="form" type="form"--%>
-<form:form modelAttribute="form" method="post" action="/expenses/save">
-    <form:errors path="" element="div"/>
-    <div>
-            <%--                <c:if test="condition"></c:if>--%>
+    <form:form modelAttribute="form" method="post" action="/expenses/save" >
+<form:errors path="" element="div"/>
+<section class="col-11">
+<div class="col-lg-4 border border-primary">
         <c:choose>
             <c:when test="${form.id!='0'}">
                 <form:hidden path="id"/>
@@ -36,16 +36,18 @@
         <form:label path="name">Name</form:label>
         <form:input path="name" class="form-control"/>
         <form:errors path="name"/>
-    </div>
-    <div>
         <form:label path="cost">Value</form:label>
         <form:input type="number" path="cost" class="form-control"/>
         <form:errors path="cost"/>
-    </div>
     <br>
+</div>
+</section>
+        <br>
     <div>
         <input type="submit" value="Save" class="btn btn-primary"/>
     </div>
+
 </form:form>
+
 </body>
 </html>

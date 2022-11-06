@@ -21,22 +21,6 @@ public class ExpensesController {
     @Autowired
     private ExpensesRepository expensesData;
 
-//    @RequestMapping(value = "/addNew", method = RequestMethod.POST)
-//    public String newExpense(Expense expense) {
-//
-//        expensesData.save(expense);
-//        return ("redirect:/expenses/list");
-//
-//    }
-
-//    @RequestMapping(value = "/addNew", method = RequestMethod.GET)
-//    public ModelAndView addNewExpense() {
-//
-//        Expense expense = new Expense();
-//        return new ModelAndView("newExpense", "form", expense);
-
-//    }
-
     @RequestMapping(value = "/addNew", method = RequestMethod.GET)
     public ModelAndView addNewExpense() {
 
